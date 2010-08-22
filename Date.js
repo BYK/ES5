@@ -22,6 +22,8 @@ if (!Date.prototype.toISOString)
 /**
  * Returns a string representing the time in the Date Time string format as UTC.
  * Taken from http://www.json.org/json2.js
+ * 
+ * @return {String}
  */
 Date.prototype.toISOString = function()
 {
@@ -40,6 +42,8 @@ if (!Date.prototype.toJSON)
 /**
  * Returns the JSON value representation of the Date object.
  * Same as Date.prototype.toISOString
+ * 
+ * @return {String}
  */
 Date.prototype.toJSON = function(key)
 {

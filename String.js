@@ -20,6 +20,8 @@ String.prototype.trim = function()
 /**
  * Returns the JSON value representation of the string.
  * Same as String.prototype.valueOf
+ * 
+ * @return {String}
  */
 if (!String.prototype.toJSON)
 String.prototype.toJSON = function(key)
