@@ -1,0 +1,5 @@
+
+syntax: regexp
+^wiki$
+syntax: regexp
+^wiki$
