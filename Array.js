@@ -122,20 +122,6 @@ Array.prototype.map = function(callback, thisObject)
   return res;
 };
 
-/**
- * Scans the whole array and removes all the duplicates of the elements.
- * @return {Array} The deduplicated array, itself.
- */
-Array.prototype.deduplicate = function()
-{
-	var dupIndex;
-	for (var i = 0; i < this.length; i++)
-		while ((dupIndex = this.indexOf(this[i], i + 1)) > -1)
-			this.splice(dupIndex, 1);
-
-	return this;
-};
-
 if (!Array.prototype.every)
 /**
  * Tests whether all elements in the array pass the test implemented by the provided function.
