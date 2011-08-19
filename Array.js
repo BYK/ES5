@@ -159,7 +159,7 @@ if (!Array.prototype.filter)
 Array.prototype.filter = function(callback, thisObject)
 {
 	var len = this.length >>> 0;
-	if (typeof fun != "function")
+	if (typeof callback != "function")
 		throw new TypeError();
 
 	var res = [];
@@ -191,7 +191,7 @@ Array.prototype.some = function(callback, thisObject)
 	var i = 0,
 	len = this.length >>> 0;
 
-	if (typeof fun != "function")
+	if (typeof callback != "function")
 		throw new TypeError();
 	
 	if (!thisObject)
