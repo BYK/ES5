@@ -16,16 +16,3 @@ String.prototype.trim = function()
 {
 	return this.replace(/^[\s]+|[\s]+$/g, "");
 };
-
-/**
- * Returns the JSON value representation of the string.
- * Same as String.prototype.valueOf
- * 
- * @return {String}
- */
-if (!String.prototype.toJSON)
-String.prototype.toJSON = function(key)
-{
-	//nested function is needed for correct ".length" return value
-	return this.valueOf();
-};
