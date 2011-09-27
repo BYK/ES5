@@ -21,7 +21,7 @@ test('isArray()', function () {
     equal(Array.isArray([1]), true, 'Array.isArray([1])');
     equal(Array.isArray(new Array()), true, 'Array.isArray(new Array())');
     equal(Array.isArray(Array.prototype), true, 'Array.isArray(Array.prototype)');
-    // Alla following calls return false.
+    // All following calls return false.
     equal(Array.isArray(), false, 'Array.isArray()');
     equal(Array.isArray({}), false, 'Array.isArray({})');
     equal(Array.isArray(null), false, 'Array.isArray(null)');
