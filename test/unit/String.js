@@ -1,9 +1,8 @@
 module('String');
 
 test('Basic requirements', function() {
-    expect(2);
+    expect(1);
     ok(String.prototype.trim, 'String.trim()');
-    ok(String.prototype.toJSON, 'String.toJSON()');
 });
 
 test('trim()', function() {
