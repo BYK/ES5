@@ -12,8 +12,7 @@ if (!Function.prototype.bind)
  * function and returning the wrapper. Whenever the resulting "bound"
  * function is called, it will call the original ensuring that 'this' is set
  * to 'context'. Also optionally curries arguments for the function.
- * Taken from http://github.com/sstephenson/prototype/blob/master/src/lang/function.js
- * 
+ * Taken from https://github.com/sstephenson/prototype/blob/master/src/prototype/lang/function.js#L108
  * @param {Object} context The object to bind to
  * @param {Object} [args] The remaining arguments to curry to object
  * @return {Function} The newly created bound function
