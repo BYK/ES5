@@ -1,11 +1,11 @@
 module('String');
 
-test('Basic requirements', function() {
+test('Basic requirements', function () {
     expect(1);
     ok(String.prototype.trim, 'String.trim()');
 });
 
-test('trim()', function() {
+test('trim()', function () {
     expect(3);
     var strings = ['   Lorem ipsum dolor sit amet.   ', '   Lorem ipsum dolor sit amet.', ' Lorem ipsum dolor sit amet.   '];
 
