@@ -7,22 +7,22 @@ test('Basic requirements', function () {
 
 //TODO(berker): Helper
 var x = 9; 
-var module = {
+var _module = {
   x: 81,
   getX: function() { return this.x; }
 };
 
-module.getX();
+_module.getX();
 
-var getX = module.getX;
+var getX = _module.getX;
 getX();
 
-var boundGetX = getX.bind(module);
+var boundGetX = getX.bind(_module);
 boundGetX();
 
 test('bind()', function () {
     expect(3);
-    equal(module.getX(), 81, 'Creating a bound function.');
+    equal(_module.getX(), 81, 'Creating a bound function.');
     equal(getX(), 9, '"this" refers to the global object.');
     equal(boundGetX(), 81, 'Create a new function with "this" bound to module.');
 });
