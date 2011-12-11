@@ -1,9 +1,16 @@
 module('Date');
 
 test('Basic requirements', function () {
-    expect(2);
+    expect(3);
+    ok(Date.now, 'Date.now()');
     ok(Date.prototype.toISOString, 'Date.prototype.toISOString()');
     ok(Date.prototype.toJSON, 'Date.prototype.toJSON()');
+});
+
+test('now()', function () {
+    expect(1);
+    var today = Date.now();
+    equal(!isNaN(parseFloat(today)) && isFinite(today), true, "Date.now() returns a numeric value.");
 });
 
 test('toISOString()', function () {
