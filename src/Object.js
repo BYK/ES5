@@ -18,7 +18,7 @@ Object.keys = function(obj)
 {
 	var result = [];
 	for(var name in obj)
-		if (Object.prototype.hasOwnProperty.appl(obj, name))
+		if (Object.prototype.hasOwnProperty.apply(obj, name))
 			result.push(name);
 
 	return result;
